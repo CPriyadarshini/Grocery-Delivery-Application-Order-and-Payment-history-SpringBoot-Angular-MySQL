@@ -1,0 +1,33 @@
+<hr>
+<h1 style="text-align: center;">Payment History</h1>
+<hr>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr style="background-color: rgb(173, 32, 131); ">
+                <th>Id</th>
+                <th>Customer Name</th>
+                <th>Product Id</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Order On</th>
+                <th>Delivery Date</th>
+                <th>Payment Method</th>
+                <th>Delivery Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let payment of payments">
+                <td>{{payment.id}}</td>
+                <td>{{payment.customer_name}}</td>
+                <td>{{payment.product_id}}</td>
+                <td>{{payment.qty}}</td>
+                <td>{{payment.total_price}}</td>
+                <td>{{payment.order_on}}</td>
+                <td>{{payment.delivery_date}}</td>
+                <td>{{payment.payment_method}}</td>
+                <td>{{payment.delivery_status}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
